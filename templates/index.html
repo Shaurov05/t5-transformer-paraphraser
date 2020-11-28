@@ -1,0 +1,21 @@
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  {% crispy form form.helper %}
+  <table style="width:70%; padding:40px">
+    <tr>
+      <th><h3>Paraphrased Output</h3></th>
+    </tr>
+    <tr>
+      <td> {{ data.text }} </td>
+    </tr>
+  </table>
+</body>
+</html>
